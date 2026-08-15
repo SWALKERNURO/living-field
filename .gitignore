@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Local design-review artifacts
+source-living-field-atlas.png
+living-field-comparison.png
+living-field-mobile.png
+design-qa.md
+
