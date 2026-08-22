@@ -15,3 +15,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Never claim that aperiodic activity or 1/f activity is consciousness. The product explores relations without asserting identity or causation.
 - The primary visualization is a time-linked state-space atlas of aperiodic exponent and alpha organization, rendered as a quantitative canvas visualization.
 - The selected source image is `source-living-field-atlas.png`; preserve its compact dark scientific aesthetic, cyan-violet field, gold report markers, lime events, and right-side evidence inspector.
+- The Windows desktop build uses Electron, the private `living-field://app` origin, sandboxing, context isolation, and a standalone Living Field application identity.

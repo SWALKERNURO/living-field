@@ -49,6 +49,22 @@ npm run build
 npm run test:sites
 ```
 
+## Windows desktop app
+
+Living Field can also run as a secure, local-first Windows desktop application.
+
+```bash
+npm run desktop
+```
+
+To build the installable Windows setup program:
+
+```bash
+npm run desktop:build
+```
+
+The resulting installer is written to `installer-output/Living-Field-Setup.exe`. It creates optional desktop and Start menu shortcuts and allows the installation folder to be selected. See [DESKTOP.md](DESKTOP.md) for installation, privacy, and code-signing notes.
+
 ## Technology
 
 - React
@@ -60,4 +76,3 @@ npm run test:sites
 ## Research boundary
 
 Living Field is a hypothesis explorer, not a diagnostic system or consciousness detector. Its visualizations are intended to generate testable questions without collapsing neural measurement, lived experience, and philosophical interpretation into the same category.
-
