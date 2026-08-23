@@ -16,3 +16,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The primary visualization is a time-linked state-space atlas of aperiodic exponent and alpha organization, rendered as a quantitative canvas visualization.
 - The selected source image is `source-living-field-atlas.png`; preserve its compact dark scientific aesthetic, cyan-violet field, gold report markers, lime events, and right-side evidence inspector.
 - The Windows desktop build uses Electron, the private `living-field://app` origin, sandboxing, context isolation, and a standalone Living Field application identity.
+- The default Overview must explain the result in plain language before exposing technical values; dense evidence views remain available as separate navigation destinations.

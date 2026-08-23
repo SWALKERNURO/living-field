@@ -1,37 +1,39 @@
 # Living Field
 
-Living Field is an experimental visualization instrument for exploring relationships among continuous EEG dynamics, experimental events, and first-person reports.
+Living Field is a visual EEG/EOG research instrument for exploring how aperiodic (1/f-like) activity and oscillatory peaks vary across experimental conditions.
 
-It is a standalone project with its own identity and research boundary. It is not a Flux EEG version or workflow mode.
+This repository contains the environment-study build used to compare six recordings from one participant: eyes-open baseline, eyes-closed baseline, video, still image, nature, and Sturm Hall. Posterior EEG was recorded at O1/O2, with EOG channels placed around the eyes.
 
-![Living Field Atlas](living-field-desktop.png)
+Living Field is a standalone project with its own identity and scientific boundary. It is not a Flux EEG version or workflow mode.
 
-## The central idea
+![Living Field condition view](living-field-desktop.png)
 
-The interface keeps three forms of evidence visibly separate:
+## What the app makes visible
 
-1. **Measured field** — a time-linked state-space view of aperiodic exponent and alpha organization.
-2. **Reported experience** — sparse, timestamped first-person descriptions with context and confidence.
-3. **Hypothesis to test** — provisional questions about how changes in the measured field relate to events and reports.
+- A plain-language opening summary of the study's main result
+- Condition-by-condition posterior EEG aperiodic exponent estimates
+- Alpha peak organization and model-fit quality
+- A direct EEG-versus-EOG comparison across conditions
+- An interactive brain-and-eyes recording map for O1, O2, and the provisional EOG montage
+- Moving-window response playback through each recording
+- A video-drift view built from three provisional video-length segments
+- An artifact-sensitivity view comparing raw and EOG-regressed estimates
+- Methods, provenance, confidence labels, and interpretation boundaries
 
-This separation is essential. Living Field does not claim that 1/f activity, aperiodic activity, or any other EEG measurement is consciousness. It provides a disciplined environment for asking whether measurable patterns and reported experiences vary together.
+The interface preserves distinctions among measured signal, recording context, and hypotheses to test. It does not claim that 1/f activity is consciousness, that EEG and EOG measure the same process, or that this single-participant pilot establishes causation.
 
-## Current prototype
+## Study status
 
-The working interface includes:
+The current build presents real pilot-study analysis outputs, but it should be read as exploratory:
 
-- An animated EEG state-space field with a continuous trajectory
-- Aperiodic exponent and alpha-organization axes
-- Selectable first-person report markers
-- Experimental event markers
-- Timeline playback and scrubbing
-- A moment-by-moment evidence inspector
-- A comparison mode for examining repeated reports
-- Visible reliability and analysis-window context
-- Responsive desktop and mobile layouts
-- Explicit interpretive and scientific boundary language
+- Sample size: one participant
+- Sampling rate: 250 Hz
+- Posterior EEG channels: O1 and O2
+- EOG channel labels are provisional pending final montage confirmation
+- Several condition estimates are aggregate-only or have limited accepted windows
+- The long video lacked stimulus markers, so its three segments are temporal proxies rather than verified repeats
 
-The included recording is realistic demonstration data. Recording parsing and the full analysis pipeline are intentionally left for the next implementation layer.
+These limitations are shown in the interface rather than hidden.
 
 ## Run locally
 
@@ -42,11 +44,11 @@ npm install
 npm run dev
 ```
 
-To create a production build and run the packaging checks:
+To create a production build and run the automated checks:
 
 ```bash
 npm run build
-npm run test:sites
+npm test
 ```
 
 ## Windows desktop app
@@ -69,10 +71,11 @@ The resulting installer is written to `installer-output/Living-Field-Setup.exe`.
 
 - React
 - Vite
-- HTML Canvas for the state-space visualization
+- HTML Canvas for the quantitative visualizations
 - Phosphor Icons
 - Local Inter and Manrope font packages
+- Electron for the installable Windows build
 
 ## Research boundary
 
-Living Field is a hypothesis explorer, not a diagnostic system or consciousness detector. Its visualizations are intended to generate testable questions without collapsing neural measurement, lived experience, and philosophical interpretation into the same category.
+Living Field is a hypothesis explorer, not a diagnostic system or consciousness detector. Its visualizations are intended to generate testable questions without collapsing neural activity, ocular activity, recording context, and philosophical interpretation into the same category.
