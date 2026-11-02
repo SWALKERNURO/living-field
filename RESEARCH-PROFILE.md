@@ -23,7 +23,7 @@ This proposed interdisciplinary investigation, developed in the context of Unive
 
 The study aims to compare **objective task performance** with **subjective impressions of intelligence, understanding, and trustworthiness**, and to measure how those impressions influence verification, delegation, and correction.
 
-**Status:** Research agenda and proposed design in development; the hypotheses are not yet tested findings. This is not presented as a completed study, faculty-sponsored project, institutional grant, or approved human-subject protocol.
+**Status:** Research agenda and proposed design in development. A related **Epistemic Trust Lab** evaluation instrument has been implemented locally and reportedly run against synthetic, deterministic scenarios; its results do not validate the real-model or human-participant hypotheses. No institutional sponsorship, grant, or approved human-subject protocol is claimed.
 
 **[Research agenda](research/HUMAN-AI-INTERACTION-AGENDA.md)** · **[Proposed study design](research/HUMAN-AI-INTERACTION-STUDY-DESIGN.md)**
 
@@ -38,6 +38,8 @@ The study aims to compare **objective task performance** with **subjective impre
 | Responsible AI | How can provenance, uncertainty, transparency, and correction reduce overreliance while preserving usability? |
 
 ## Relevant engineering and research portfolio
+
+- **[Epistemic Trust Lab — project overview](https://github.com/SWALKERNURO/SWALKERNURO/blob/main/projects/EPISTEMIC-TRUST-LAB.md):** implemented local synthetic evaluation instrument for examining contextual memory and evidential support. Reported: 240 synthetic scenarios, 5,760 deterministic policy evaluations, dashboard, exports, and 34 passing automated tests. Full code and live demo pending release; real-model and human-participant validation not yet performed.
 
 - **[Living Field](https://github.com/SWALKERNURO/living-field):** exploratory EEG/EOG research visualization, comparisons among recording conditions, and explicit limits on interpretation.
 - **[Pink Noise Relational Field / NoiseColor](https://github.com/SWALKERNURO/pink-noise-relational-field):** measured EEG/EOG temporal visualization and local-first spectral audio analysis with inspectable diagnostics.
