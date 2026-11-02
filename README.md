@@ -1,5 +1,7 @@
 # Living Field
 
+[![DOI](https://zenodo.org/badge/1335424414.svg)](https://zenodo.org/badge/latestdoi/1335424414)
+
 Living Field is a visual EEG/EOG research instrument for exploring how aperiodic (1/f-like) activity and oscillatory peaks vary across experimental conditions.
 
 This repository contains the environment-study build used to compare six recordings from one participant: eyes-open baseline, eyes-closed baseline, video, still image, nature, and Sturm Hall. Posterior EEG was recorded at O1/O2, with EOG channels placed around the eyes.
