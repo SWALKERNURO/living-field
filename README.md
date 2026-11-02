@@ -79,3 +79,9 @@ The resulting installer is written to `installer-output/Living-Field-Setup.exe`.
 ## Research boundary
 
 Living Field is a hypothesis explorer, not a diagnostic system or consciousness detector. Its visualizations are intended to generate testable questions without collapsing neural activity, ocular activity, recording context, and philosophical interpretation into the same category.
+
+## Broader research context
+
+My related interdisciplinary research agenda explores how conversational memory, naturalistic speech, and contextual inference affect **measured AI reliability versus perceived intelligence and epistemic trust**. This is a separate, proposed human–AI interaction study, not a finding of the EEG pilot.
+
+**[Research profile](RESEARCH-PROFILE.md)** · [Research agenda](research/HUMAN-AI-INTERACTION-AGENDA.md) · [Proposed study design](research/HUMAN-AI-INTERACTION-STUDY-DESIGN.md)
