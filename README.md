@@ -39,7 +39,7 @@ These limitations are shown in the interface rather than hidden.
 
 ## Run locally
 
-Requirements: Node.js 20 or newer.
+Requirements: Node.js 22.12 or newer; CI uses Node.js 24.
 
 ```bash
 npm install
@@ -87,3 +87,7 @@ Living Field is a hypothesis explorer, not a diagnostic system or consciousness 
 My related interdisciplinary research agenda explores how conversational memory, naturalistic speech, and contextual inference affect **measured AI reliability versus perceived intelligence and epistemic trust**. This is a separate, proposed human–AI interaction study, not a finding of the EEG pilot.
 
 **[Research profile](RESEARCH-PROFILE.md)** · [Research agenda](research/HUMAN-AI-INTERACTION-AGENDA.md) · [Proposed study design](research/HUMAN-AI-INTERACTION-STUDY-DESIGN.md)
+
+## Dependency and CI maintenance
+
+CI builds and tests the web application, audits the complete dependency tree, builds the unsigned Windows installer, and smoke-tests the packaged application. The targeted minimatch override patches the Electron packaging dependency graph without downgrading electron-builder. Remove it when the upstream packaging dependencies require a patched version. These software checks do not establish scientific or clinical validity.
